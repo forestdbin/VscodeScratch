@@ -1,0 +1,20 @@
+{
+    "window.restoreWindows": "none",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.autoSurround": "never",
+    "editor.minimap.showSlider": "always",
+    "editor.rulers": [
+        80
+    ],
+    "editor.stickyScroll.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.sortOrderLexicographicOptions": "upper",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorCustomizations": {
+        "minimapSlider.background": "#f2ff0011"
+    },
+    "workbench.startupEditor": "none",
+}

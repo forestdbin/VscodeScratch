@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-pthread",
+                "-include",
+                "common.h",
+                "-fdiagnostics-color=always",
+                "-g",
+                "-DDEBUG",
+                "main.cc",
+                "greet.cc",
+                "-o",
+                "${workspaceFolder}/foo"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "build foo"
+        },
+        {
+            "type": "shell",
+            "label": "clean",
+            "command": "rm -rf foo",
+            "detail": "clean foo"
+        },
+        {
+            "type": "shell",
+            "label": "pre-compile-header",
+            "command": "g++ -x c++-header -std=c++17 -Wall -Wextra -Wpedantic -pthread common.h",
+            "options": {
+                "statusbar": {
+                    "hide": true
+                }
+            }
+        }
+    ]
+}

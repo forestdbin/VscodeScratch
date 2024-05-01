@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph",
+        "actboy168.tasks"
+    ],
+    "unwantedRecommendations": []
+}
